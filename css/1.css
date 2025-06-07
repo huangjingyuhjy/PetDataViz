@@ -1,0 +1,21 @@
+.chart-container {
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+}
+
+#container1 {
+  width: 30%;
+  padding-right: 10px;
+}
+
+#container2 {
+  width: 70%;
+  padding-left: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,36 @@
+
+        .chart-container4 {
+            width: 510px; /* 调整宽度以确保每行最多容纳两个图表 */
+            height: 400px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+           
+            float: left;
+        }
+        .title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .chart-container5{
+            width: 800px; /* 调整宽度以确保每行最多容纳两个图表 */
+            height: 300px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+            margin:auto;
+            float: left;
+            
+        }
+       .chart-container6{
+            width: 40px; /* 调整宽度以确保每行最多容纳两个图表 */
+            height: 300px;
+            margin-top: 100px;
+            margin-left: 50px;
+            margin:auto;
+            float: left;
+            font-size: 22px;
+            color: #000;
+            border-right:3px solid #f2c54e;
+           
+       }

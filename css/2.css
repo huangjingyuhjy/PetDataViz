@@ -1,0 +1,49 @@
+#box-sang {
+    display: flex;
+    height: 600px;
+    padding: 20px;
+    width: 800px;
+}
+#chart-container {
+    flex: 2;
+    height: 400px;
+    margin-right: 20px;
+}
+#control-panel {
+    flex: 1;
+    padding: 20px;
+    
+    border-radius: 8px;
+    height: 400px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+/* 旭日图样式 */
+#box-xu{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+    
+}
+#xu-chart{
+    /* flex: 2; */
+    height: 600px;
+    margin-right: 40px;
+    width: 80%;
+    /* background-color: #f2d58c; */
+    border-radius: 40px;
+   
+
+}
+#xu-neirong{
+    border-left: 3px solid #dfeeea;
+    height: 600px;
+    margin-right: 40px;
+    width: 400px;
+
+}
