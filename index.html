@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PetDataViz</title>
+    <link rel="icon" href="./images/icon.jpg">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        /* 全屏背景图 */
+        body::before {
+            content: "";
+            background: url('./images/PetDataViz.png') no-repeat center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        /* 文字容器定位到右下角 */
+        .splash-container {
+            position: absolute;
+            right: 5%;
+            bottom: 15%; /* 调整位置给按钮留空间 */
+            text-align: right;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .splash-text {
+            color: white;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px #000;
+            animation: pulse 2s infinite;
+            margin-bottom: 0.5rem;
+            white-space: nowrap;
+        }
+        
+        .sub-text {
+            color: white;
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px #000;
+            animation: pulse 2s infinite;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        /* 进入按钮样式 */
+        .enter-btn {
+            position: absolute;
+            right: 10%;
+            bottom: 5%;
+            background: rgba(242, 197, 78, 0.8);
+            color: #000;
+            font-size: 1.5rem;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+        
+        .enter-btn:hover {
+            background: rgba(242, 197, 78, 1);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        /* About Us 按钮样式 */
+        .about-btn {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            color: #f2c54e;
+            text-shadow: 2px 2px 4px #000;
+            font-size: 1.2rem;
+            cursor: pointer;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+        
+        .about-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+        
+        /* 关于我们弹窗 */
+        .about-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 400px;
+            display: none;
+            z-index: 100;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .about-modal h2 {
+            margin-top: 0;
+            color: #f2c54e;
+        }
+        
+        .close-btn {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- About Us 按钮 -->
+    <div class="about-btn" onclick="showAbout(event)">About Us</div>
+    
+    <!-- 关于我们弹窗 -->
+    <div class="about-modal" id="aboutModal">
+        <span class="close-btn" onclick="hideAbout()">×</span>
+        <h2>About PetDataViz</h2>
+        <p>此项目为四川大学《数据可视化》课程结课项目</p>
+        <p>🐾 让我们一起探索宠物世界的奥秘吧！</p>
+    </div>
+    
+    <!-- 主内容 -->
+    <div class="splash-container">
+        <div class="splash-text">欢迎来到PetDataViz</div>
+        <div class="sub-text">探索宠物数据的世界</div>
+    </div>
+    
+    <!-- 新增的进入按钮 -->
+    <button class="enter-btn" onclick="location.href='home.html'">点击进入 →</button>
+
+    <script>
+        // 阻止点击about按钮时触发body的跳转
+        function showAbout(event) {
+            event.stopPropagation();
+            document.getElementById('aboutModal').style.display = 'block';
+        }
+        
+        function hideAbout() {
+            document.getElementById('aboutModal').style.display = 'none';
+        }
+        
+        // 点击弹窗外部关闭弹窗
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('aboutModal');
+            if (event.target === modal) {
+                hideAbout();
+            }
+        });
+    </script>
+</body>
+</html>

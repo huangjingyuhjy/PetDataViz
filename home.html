@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title> PetDataViz </title>
+    <link rel="stylesheet" href="./css/index1.css">
+     <link rel="stylesheet" href="./css/1.css">
+     <link rel="stylesheet" href="./css/2.css">
+     <link rel="stylesheet" href="./css/3.css">
+     <link rel="stylesheet" href="./css/4.css">
+     <link rel="icon" href="./images/icon.jpg">
+     
+</head>
+<body>
+    <div class="container">
+        <!-- 图片展示区 -->
+        <div class="image-box" id="top-image-box">
+    <!-- 将标题整合到轮播图上方 -->
+    <!-- <div class="slideshow-header">
+        <h1 class="main-title">PetDataViz </h1>
+       
+    </div> -->
+    <!-- 轮播图容器 -->
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="./images/cover1.png" alt="宠物图片1">
+        </div>
+        <div class="slide fade">
+            <img src="./images/cover2.png" alt="宠物图片2">
+        </div>
+        <div class="slide fade">
+            <img src="./images/cover3.png" alt="宠物图片3">
+        </div>
+        <div class="slide fade">
+            <img src="./images/cover4.png" alt="宠物图片4">
+        </div>
+    </div>
+    
+    <!-- 悬浮导航 -->
+    <div class="floating-nav" id="mainNav">
+        <div class="nav-item" data-target="section1">毛孩选购指南</div>
+        <div class="nav-item" data-target="section2">铲屎官大揭秘</div>
+        <div class="nav-item" data-target="section3">汪汪喵喵购物车</div>
+        <div class="nav-item" data-target="section4">宠物星球移民攻略</div>
+    </div>
+</div>
+        
+        <!-- 内容分区 -->
+        <div id="section1" class="section">
+        <span class="anchor" id="anchor-section1"></span>
+        <h2 class="section-title">毛孩选购指南</h2>
+          
+        <div class="subsection-container">
+            <div class="subsection">
+                <h3 class="subsection-title">购买宠物金额图</h3>
+            <div class="clearfix" style="height: 100%">
+    <!-- 左方：修改后的饼图 -->
+    
+    <div id="container1" class="chart-container"></div>
+
+    <!-- 右方：柱状图/折线图 -->
+    <div id="container2" class="chart-container"></div>
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script src="./js/1.js"></script>
+  </div>
+            </div>
+        </div>
+        
+        <div class="text">
+          <p>
+            在宠物消费市场中，毛孩的选购是铲屎官们迈出的重要第一步。根据2023年和2024年的数据显示，不同宠物的购买金额消费占比呈现出一定的变化趋势。2023年，猫咪的购买金额达到1305亿元左右，狗狗为1488亿，小型宠物（如仓鼠、兔子等）占352亿，而水族宠物（如金鱼、锦鲤等）购买金额达到了342亿。到了2024年，购买金额总体都得到了上升，猫咪购买金额提升至1445亿，狗狗为1557亿，小型宠物微升至433亿，水族宠物升至414亿。而这两年鸟类和冷血类宠物消费金额比较稳定，都处于一个比较低的水平。通过饼图和折线图的直观呈现，我们可以清晰地看到，猫咪和小型宠物的市场热度在逐年上升。这可能与现代人生活空间的变化以及对小型宠物陪伴需求的增加有关。对于预算有限的铲屎官，小型宠物和水族宠物是不错的选择；而如果追求陪伴和互动性，猫咪和狗狗则是更受欢迎的伙伴。
+          </p>
+        </div>
+        <div class="tips">
+            <p>Tips</p>
+            <p>点击折线图可以查看具体宠物分类及占比哦</p>
+        </div>
+    </div>
+
+        
+        <div id="section2" class="section">
+            <span class="anchor" id="anchor-section2"></span>
+            <h2 class="section-title">铲屎官大揭秘</h2>
+            
+            <div class="subsection-container">
+                <div class="subsection">
+                   
+                     <div id="box">
+                                  <!-- 桑基图容器 -->
+                                  <div id="chart-container"></div>
+        
+                              </div>
+                              </script>
+                </div>
+                
+                
+            </div>
+              <div class="text-title"> <p>
+                铲屎官用户画像</p></div>
+             <div class="text">
+            <p>
+                在这个充满爱的宠物世界里，铲屎官们构成了一个多元而丰富的群体。我们发现，宠物消费市场呈现出年轻化、女性化、城市化和职业化的特点。年轻女性群体是当前宠物消费的核心力量，而企业职员和自由职业者则是消费能力较强的群体。这些数据揭示了铲屎官群体的特征，也为宠物市场的精准营销提供了重要依据。无论是年轻的上班族，还是忙碌的中年人，宠物都成为了他们生活中的重要伙伴，为他们的生活增添了无尽的温暖和乐趣。
+            </p>
+        </div>
+        </div>
+        
+        <div id="section3" class="section">
+            <span class="anchor" id="anchor-section3"></span>
+            <h2 class="section-title">汪汪喵喵购物车</h2>
+            
+            <div class="subsection-container">
+                <div class="subsection">
+                    
+                      <div id="chart-container3">
+                        
+                      </div>
+                      <div id="gauge-container"></div>
+                      <div class="text">
+                        <p>
+                            宠物市场的繁荣离不开丰富多样的产品。在我们的汪汪喵喵购物车中，宠物主粮是必不可少的刚需产品。根据市场分析，大部分的宠物市场消费品的网购率都有上升，但是猫狗美容清洗用品的网购率却下降了。
+                        </p>
+                      </div>
+                      <div class="text-tips">
+                        <p>
+                            Tips
+                        </p>
+                        <p>
+                            点击“宠物产品市场分析”气泡图里的气泡可以获取不同宠物产品的网购率
+                        </p>
+                      </div>
+                      <script src="./js/3.js">
+                      </script>
+                </div>
+                
+               
+                </div>
+           
+            
+            <div class="subsection-container">
+                <div class="subsection">
+                    
+        
+        <div id="chart2" class="chart-container4"></div>
+        <div id="chart3" class="chart-container4"></div>
+       <div  class="chart-container6">
+        <p>宠物口粮来源偏好</p>
+       </div>
+        <div id="chart1" class="chart-container5">
+              
+        </div>
+        <div class="text1">
+            <p>
+                在以上的两个个柱状图中，分别展示了消费者对于宠物口粮品类以及宠物保健品品类的偏好。而旁边的柱状图则展示了消费者对于宠物口粮来源的偏好。可以看见，大部分消费者更偏好国产的宠物口粮，而益生菌和维生素这种宠物保健品的消费偏好更加突出。而不同种类的宠物口粮都有自己的消费群体，其中，天然粮，罐头和冻干粮最受消费者喜爱。
+            </p>
+        </div>
+        <div class="tips">
+            <p>Tips</p>
+            <p>鼠标悬浮在柱状图上可以看见不同种类口粮百分比以及绝对数据（后加“亿”）</p>
+        </div>
+                </div>
+                <script src="./js/4.js"></script>
+            </div>
+        </div>
+        </div>
+        <div id="section4" class="section" style=" width: 77%; margin: auto;" >
+            <span class="anchor" id="anchor-section4"></span>
+            <h2 class="section-title">宠物星球移民攻略</h2>
+            
+             <div class="subsection-container" >
+                <div class="subsection" >
+                    
+                      <div id ="box-xu">
+
+        <div id="xu-chart"></div>
+        <div id="xu-neirong">
+            
+        </div><script src="./js/2.js"></script>
+    </div> 
+    
+                     
+                </div>
+                
+            </div> 
+        </div> 
+
+
+
+        <!-- 页尾部分 -->
+    <footer>
+        <div class="footer-container">
+            <!-- PetDataViz 部分 -->
+            <div class="footer-section">
+                <h3>PetDataViz</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-paw"></i> 代码仓库</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> 相关模型</a></li>
+                    <li><a href="#"><i class="fas fa-database"></i> 研究成果</a></li>
+                </ul>
+            </div>
+            
+            <!-- 最新动向部分 -->
+            <div class="footer-section">
+                <h3>最新动向</h3>
+                <div class="news-item">
+                    <a href="#">研究进展</a>
+                    
+                </div>
+                <div class="news-item">
+                    <a href="#">更新日志</a>
+                    
+                </div>
+                <div class="news-item">
+                    <a href="#">反馈问题</a>
+                    
+                </div>
+            </div>
+            
+            <!-- 相关链接部分 -->
+            <div class="footer-section">
+                <h3>相关链接</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-book"></i> 使用文档</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> 常见问题</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> 联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; PetDataViz. 保留所有权利。</p>
+        </div>
+    </footer>
+ 
+        
+    <!-- </div> -->
+    <script>
+        //图片滚动播放
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // 每3秒切换一次
+        }
+
+        // 点击导航跳转
+        document.querySelectorAll('.nav-item').forEach(function(item) {
+            item.addEventListener('click', function() {
+                var target = item.getAttribute('data-target');
+                var anchor = document.getElementById('anchor-' + target);
+                if (anchor) {
+                    window.scrollTo({
+                        top: anchor.getBoundingClientRect().top + window.scrollY - 70, // 距离顶部留出导航高度
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 悬浮导航栏逻辑
+        var nav = document.getElementById('mainNav');
+        var imgBox = document.getElementById('top-image-box');
+        var navOriginalOffset = imgBox.offsetTop + imgBox.offsetHeight - 30; // bottom: -30px
+        function handleNavSticky() {
+            if (window.scrollY >= navOriginalOffset) {
+                nav.classList.add('sticky');
+            } else {
+                nav.classList.remove('sticky');
+            }
+        }
+        window.addEventListener('scroll', handleNavSticky);
+        window.addEventListener('resize', function() {
+            navOriginalOffset = imgBox.offsetTop + imgBox.offsetHeight - 30;
+            handleNavSticky();
+        });
+      var nav = document.getElementById('mainNav');
+    var imgBox = document.getElementById('top-image-box');
+    var container = document.querySelector('.container');
+    var navHeight = nav.offsetHeight;
+    var navOriginalOffset = imgBox.offsetTop + imgBox.offsetHeight - 30; // bottom: -30px
+    function handleNavSticky() {
+        if (window.scrollY >= navOriginalOffset) {
+            nav.classList.add('sticky');
+            container.style.paddingTop = nav.offsetHeight + 'px'; // 动态获取高度
+        } else {
+            nav.classList.remove('sticky');
+            container.style.paddingTop = '';
+        }
+    }
+    window.addEventListener('scroll', handleNavSticky);
+    window.addEventListener('resize', function() {
+        navOriginalOffset = imgBox.offsetTop + imgBox.offsetHeight - 30;
+        handleNavSticky();
+    });
+        // 高亮当前分区
+        function highlightNav() {
+            var anchors = ['section1','section2','section3','section4'].map(id=>document.getElementById('anchor-'+id));
+            var navItems = document.querySelectorAll('.nav-item');
+            let activeIndex = 0;
+            for (let i = 0; i < anchors.length; i++) {
+                if (anchors[i].getBoundingClientRect().top - 80 <= 0) {
+                    activeIndex = i;
+                }
+            }
+            navItems.forEach((item,i)=>item.classList.toggle('active', i===activeIndex));
+        }
+        window.addEventListener('scroll', highlightNav);
+        window.addEventListener('resize', highlightNav);
+        window.addEventListener('DOMContentLoaded', highlightNav);
+    </script>
+</body>
+</html>
